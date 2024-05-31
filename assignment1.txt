@@ -1,0 +1,23 @@
+1. Does the graph have the same characteristics of a random or a power-law network?
+A power-law network is characterized by a degree distribution that follows a power-law pattern, meaning a small number of nodes (hubs) have a high degree, while the majority of nodes have a low degree. This is in contrast to a random network, where most nodes have a similar degree. 
+Our report indicates that the degree distribution follows a power-law distribution with an alpha value of 5.371203801764364. The R value (1.587270679150631) and the p value (0.16511922233103737) suggests a good fit to a power-law model, having an R value closer to 1 which indicates a perfect power-law distribution. Therefore, we can conclude that the network exhibits characteristics of a power-law network.
+
+
+2. Which are the most important nodes, with respect to a given centrality measure?
+Degree Centrality: This measure indicates the number of direct connections a node has. Higher degree centrality means the node is more connected within the network. The nodes with the highest degree centrality are Node 17056 (0.01301) and Node 197 (0.01001).
+Betweenness Centrality: This measure indicates how often a node appears on the shortest paths between other nodes. The highest betweenness centrality nodes are Node 197 (0.00164),
+and Node 5183 (0.00114).
+Closeness Centrality: This measure indicates how close a node is to all other nodes in the network. The highest closeness centrality nodes are Node 197 (0.02051) and Node 15481 (0.01817)​​.
+These measures identify Node 197, Node 5183, Node 17056 and Node 15481 are important across different centrality metrics.
+
+
+3. Are the paths short with respect to the size of the network?
+The average shortest path length in the network is 4.201741654571843, which means that on average, you can get from any node to any other node in just over 4 steps. And the longest part i.e diameter is 11. So for our a network with 1000 nodes, these values suggest that most nodes can be reached from any other node in a small number of steps, indicating the presence of the small-world network.
+
+
+4. Is the network dense?
+The density of the network is 0.0006006006006006006, which is much lower than the threshold of 0.1 used to distinguish between sparse and dense networks. A low density indicates that there are relatively few edges compared to the number of possible edges, which means the network is sparse.
+
+
+5. Is the network assortative?
+The assortativity measure for this network is 0.186005882877262, which is positive but close to 0 which indicates a slight tendency for nodes with similar numbers of connections to connect with each other.
